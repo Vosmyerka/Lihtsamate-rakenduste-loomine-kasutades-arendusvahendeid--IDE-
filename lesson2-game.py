@@ -1,6 +1,3 @@
-from turtle import st
-
-
 map1 =  [
     [12, 0, 1, 0],
     [1, 0, 1, 0],
