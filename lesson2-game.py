@@ -34,8 +34,8 @@ def move(step, current_position_x, current_position_y):
     return[current_position_x, current_position_y]
 
 new_position = move(1, start_position_x, start_position_y)
-new_position = move(2, new_position[0], start_position_y[1])
-new_position = move(3, new_position[0], start_position_y[1])
+new_position = move(2, new_position[0], new_position[1])
+new_position = move(3, new_position[0], new_position[1])
 
 '''
 if map[current_position_y][current_position_x] == 24:
