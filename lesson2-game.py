@@ -26,12 +26,11 @@ def move(step, current_position_x, current_position_y):
 
     if can_move_right:
         print("Should move right")
-        current_position_x = current_position_x + 1
+        return[current_position_x + 1, current_position_y]
     if can_move_bottom:
         print("Should move down")
-        current_position_y = current_position_y + 1
+        return[current_position_x, current_position_y + 1]
 
-    return[current_position_x, current_position_y]
 
 new_position = move(1, start_position_x, start_position_y)
 new_position = move(2, new_position[0], new_position[1])
