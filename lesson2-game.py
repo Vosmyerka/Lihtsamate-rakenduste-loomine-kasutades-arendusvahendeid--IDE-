@@ -1,5 +1,3 @@
-
-from hashlib import new
 import random
 
 map1=[
