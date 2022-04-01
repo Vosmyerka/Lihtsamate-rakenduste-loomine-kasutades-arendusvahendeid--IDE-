@@ -33,6 +33,8 @@ with mp_hands.Hands(
       for hand_landmarks in results.multi_hand_landmarks:
         print(hand_landmarks)
         
+# ================================== Указательный палец
+
         center_coordinates = (
             int(hand_landmarks.landmark[8].x * image_width), 
             int(hand_landmarks.landmark[8].y * image_height)
@@ -41,7 +43,53 @@ with mp_hands.Hands(
         color = (255, 0, 0)
         thickness = 2
         image = cv2.circle(image, center_coordinates, radius, color, thickness)
+
+# ================================== Средний палец
         
+        center_coordinates = (
+            int(hand_landmarks.landmark[12].x * image_width), 
+            int(hand_landmarks.landmark[12].y * image_height)
+        )
+        radius = 20
+        color = (255, 0, 0)
+        thickness = 2
+        image = cv2.circle(image, center_coordinates, radius, color, thickness)
+
+# ================================== Большой палец
+        
+        center_coordinates = (
+            int(hand_landmarks.landmark[4].x * image_width), 
+            int(hand_landmarks.landmark[4].y * image_height)
+        )
+        radius = 20
+        color = (255, 0, 0)
+        thickness = 2
+        image = cv2.circle(image, center_coordinates, radius, color, thickness)
+
+# ================================== Безымянный палец
+        
+        center_coordinates = (
+            int(hand_landmarks.landmark[16].x * image_width), 
+            int(hand_landmarks.landmark[16].y * image_height)
+        )
+        radius = 20
+        color = (255, 0, 0)
+        thickness = 2
+        image = cv2.circle(image, center_coordinates, radius, color, thickness)
+
+# ================================== Мизинец
+        
+        center_coordinates = (
+            int(hand_landmarks.landmark[20].x * image_width), 
+            int(hand_landmarks.landmark[20].y * image_height)
+        )
+        radius = 20
+        color = (255, 0, 0)
+        thickness = 2
+        image = cv2.circle(image, center_coordinates, radius, color, thickness)
+
+# ==================================
+
         mp_drawing.draw_landmarks(
             image,
             hand_landmarks,
