@@ -31,7 +31,7 @@ with mp_hands.Hands(
     image_height, image_width, _ = image.shape
     if results.multi_hand_landmarks:
       for hand_landmarks in results.multi_hand_landmarks:
-        print(hand_landmarks)
+#        print(hand_landmarks)
         
 # ================================== Указательный палец
 
