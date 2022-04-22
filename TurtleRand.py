@@ -1,23 +1,21 @@
 import turtle
-from random import randint
+from random import randint, choice
  
-tur = turtle.Turtle()
-  
-def draw(spce,a):
-  for i in range(a):
-    for j in range(a):
-        
-        tur.dot()
-          
-        tur.forward(spce)
-    tur.backward(spce*a)
-      
-    tur.right(90)
-    tur.forward(spce)
-    tur.left(90)
- 
-tur.penup()
-draw(10,8) 
+n = 0
 
-tur.hideturtle()
+turtle.colormode(255)
+#turtle.bgcolor("black")
+
+while (n < 100):
+  turtle.pensize(randint(10, 50))
+  turtle.pencolor(randint(1, 255), randint(1, 255), randint(1, 255))
+  rand = randint(1, 2)
+  turtle.speed(100)
+  turtle.forward(randint(1, 100))
+  if (rand == 1):
+    turtle.left(randint(1, 360))
+  else:
+    turtle.right(randint(1, 360))
+  n = n + 1
+
 turtle.done()
