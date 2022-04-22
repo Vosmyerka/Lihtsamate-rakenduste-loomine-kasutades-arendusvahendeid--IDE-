@@ -1,25 +1,14 @@
 import turtle
 from random import randint, choice
-from tkinter import *
-
-#------------------------IMPORT---------------------------
-
-#---------------------------VAR---------------------------
-
-ts = turtle.getscreen()
-
-#---------------------------------------------------------
-
+ 
 n = 0
 
 turtle.mode("logo")
-turtle.speed(0)
-turtle.hideturtle()
+turtle.speed(100)
 turtle.colormode(255)
 #turtle.bgcolor("black")
 
-
-while (n < 100):
+while (n < 200):
   turtle.pensize(randint(10, 50))
   turtle.pencolor(randint(1, 255), randint(1, 255), randint(1, 255))
   rand = randint(1, 2)
@@ -47,8 +36,5 @@ while (n < 100):
     turtle.pendown()
 
   n = n + 1
-  print(n)
-
-ts.getcanvas().postscript(file="duck.eps")
 
 turtle.done()
