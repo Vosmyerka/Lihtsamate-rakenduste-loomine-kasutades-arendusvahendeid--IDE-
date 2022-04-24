@@ -17,7 +17,7 @@ turtle.hideturtle()                                      # Hides turtle on the c
 turtle.colormode(255)                                    # Color mode, 255 = RGB
 turtle.bgcolor("white")                                  # Background color
 
-actions = 100                                            # How many moves will make the turtle !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+actions = 2000                                            # How many moves will make the turtle !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 #------------------------MAIN-LOOP------------------------
 
@@ -34,7 +34,7 @@ while (n < actions):
 
 #---------------------------------------------------------
   turtle.pensize(randint(10, 50))                        # Write here the randomization of pen size
-  turtle.pencolor(allcolors)                             # Write here the color which you want from part VAR-IN-WHILE
+  turtle.pencolor(allcolors)                             # Write here the color which you want from part VAR-IN-WHILE !!!!!!!!!!!!!!!!!!!!!!
   turtle.forward(randint(1, 200))                        # Write here the randomization of move length
   
   if (rand == 1):
